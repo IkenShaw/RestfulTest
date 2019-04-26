@@ -1,4 +1,4 @@
-package org.iken.main;
+package org.iken.main.vo;
 
 public class Greeting {
     private final long id;

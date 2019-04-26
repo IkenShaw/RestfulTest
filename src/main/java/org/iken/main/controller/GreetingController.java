@@ -1,10 +1,10 @@
 package org.iken.main.controller;
 
 
-import org.iken.main.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.iken.main.vo.Greeting;
 
 import java.util.concurrent.atomic.AtomicLong;
 
