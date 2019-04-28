@@ -29,4 +29,12 @@ public class DatabaseController {
     public @ResponseBody Iterable<User> getAllUsers(){
         return userRepository.findAll();
     }
+
+    @GetMapping(path = "/delete")
+    public @ResponseBody String delUser(@RequestParam Integer id){
+        User user = new User();
+        user.setId(id);
+        userRepository.delete(user);
+        return "deleted";
+    }
 }
